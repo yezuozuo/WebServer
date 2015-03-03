@@ -1,0 +1,113 @@
+html,body{
+  background:#f3efef;
+  text-align:center;
+  font-family:"Calligraph421 BT";
+  border:6px solid #f3efef;
+  height:100%;
+  font-size: 20px;
+}
+/*top*/
+.toptitle{
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;;
+  text-transform: uppercase;
+  display: block;
+  font-size: 92px;
+  color: #f1ebe5;
+  text-shadow: 0 8px 9px #c4b59d, 0px -2px 1px #fff;
+  font-weight: bold;
+  letter-spacing: -4px;
+  text-align: center;
+  border-radius: 20px;
+}
+.topLink{
+  margin-left: -25%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.topLink_t{
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.topLink a{
+  text-decoration: none;
+  font-size: 25px;
+}
+.topLink_t a{
+  text-decoration: none;
+  font-size: 25px;
+}
+.topLink span{
+}
+.sumRecord{
+
+}
+/*table*/
+.commonTablePosition{
+  margin-left: 20%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.bigTablePosition{
+  margin-left: 13%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.bigerTablePosition{
+  margin-left: 15%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+/*pageset*/
+.pageset{
+  margin-left: -25%;
+}
+
+/*btnPosition*/
+.insert{
+  margin-left: -25%;
+}
+
+/*form*/
+#insertForm,#editForm{
+  position: absolute;
+  top: 4%;
+  right: 4%;
+}
+.showList{
+  position: absolute;
+  width: 400px;
+  right: 5%;
+  top: 5%;
+}
+/*foot*/
+#footer{
+  position: fixed;
+  bottom: 4%;
+  left: 42%;
+}
+/*search*/
+#searchResult table{
+  margin-left: 40%;
+  border-bottom: 1px solid #000;
+}
+.title_1{
+  margin-left: -20%;
+  font-size: 30px;
+}
+.title_2{
+  margin-left: -4%;
+  border: 1px solid #000;
+}
+/*.title_3{
+  ma
+}*/
+#logDiv{
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+#insertExtract{
+  width: 400px;
+  height: 50px;
+}
