@@ -1,0 +1,16 @@
+body, html{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	background: #dddddd;
+	font-family: "微软雅黑";
+}
+#map_input{
+	position: absolute;
+	top: 2%;
+	left: 82%;
+}
+#map_display{
+	height: 600px;
+	width: 80%;
+}

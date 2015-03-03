@@ -5,6 +5,6 @@
 	'port'     => '3305',
 	'dbuser'   => 'root',
 	'dbpass'   => '123',
-	'dbname'   => 'itimer',
+	'dbname'   => 'bus',
 	'charset'  => 'utf8'
 	);

@@ -64,7 +64,6 @@
 
 		if(file_exists(CTLDIR.$ctl.'.php'))
 		{
-			echo $ctl;
 			require_once(INCDIR.'frontpage.php');
 			require_once(CTLDIR.$ctl.'.php');
 
