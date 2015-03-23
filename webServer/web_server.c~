@@ -1,0 +1,46 @@
+/*
+configuration()读取配置文件，对端口号和根目录进行配置
+成功返回0，失败返回1 
+*/
+
+
+/*
+init()完成对服务器套接字的初始化
+成功返回0，失败返回-1
+lfd被设置成连接的socket标志符
+*/
+init(struct sockaddr_in * sin,int * lfd,int * port,char * path)
+{
+	int tfd;
+	//读取配置文件
+	configuation(port,path);
+	//清空地址结构
+	bzero(sin,sizeof(struct sockaddr_in));
+	//设置IPV4
+	sin->sin_family = AF_INEF;
+	//设置服务器可以接收任意IP
+	sin->sin_addr.s_addr = INDDR_ANY;
+	//设置端口
+	sin->sin_port = htons(*port);
+	//建立连接
+	//tfd为建立的socket连接标志符
+	if((tfd = socket(AF_INEF,SOCK_STREAM,0)) == -1)
+	{
+		perror("fail to create socket/n");
+		return -1;
+	}
+	//绑定客户端地址，没有具体地址的限制
+	if((bind(tfd,(struct sockaddr *)sin,sizeof(struct sockaddr_in))) == -1)
+	{
+		perror("fail to bind\n");
+		return -1;
+	}
+	//监听端口
+	if((listen(tfd,20)) == -1)
+	{
+		perror("fail to listen\n");
+		return -1;
+	}
+	*lfd = tfd;
+	return 0;
+}

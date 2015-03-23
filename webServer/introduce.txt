@@ -1,0 +1,40 @@
+stdio 就是指 “standard input & output"（标准输入输出）
+所以，源代码中如用到标准输入输出函数时，就要包含这个头文件！
+例如c语言中的 printf("%d",i); scanf("%d",&i);等函数
+
+extern可以置于变量或者函数前，以标示变量或者函数的定义在别的文件中，提示编译器遇到此变量和函数时在其他模块中寻找其定义。此外extern也可用来进行链接指定。
+
+struct stat {
+
+        mode_t     st_mode;       //文件对应的模式，文件，目录等
+
+        ino_t      st_ino;       //inode节点号
+
+        dev_t      st_dev;        //设备号码
+
+        dev_t      st_rdev;       //特殊设备号码
+
+        nlink_t    st_nlink;      //文件的连接数
+
+        uid_t      st_uid;        //文件所有者
+
+        gid_t      st_gid;        //文件所有者对应的组
+
+        off_t      st_size;       //普通文件，对应的文件字节数
+
+        time_t     st_atime;      //文件最后被访问的时间
+
+        time_t     st_mtime;      //文件内容最后被修改的时间
+
+        time_t     st_ctime;      //文件状态改变时间
+
+        blksize_t st_blksize;    //文件内容对应的块大小
+
+        blkcnt_t   st_blocks;     //伟建内容对应的块数量
+
+      };
+
+fstat(fd, &buf)
+参数 描述
+fd 必需,规定要检查的打开文件的文件描述符。
+buf 必需,是struct stat结构体类型的变量
