@@ -1,2 +1,2 @@
-# WebServer
-A WebServer based on Linux C
+# webServer
+A webServer based on Linux C
