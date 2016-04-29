@@ -44,7 +44,3 @@ extern int init(struct sockaddr_in * sin,int * lfd,int * port,char * path);	//�
 extern int error_page(int sock_fd);					//显示错误页面的函数
 extern int get_path(int cfd,char * path);					//获取文件路径的函数
 extern int write_page(int cfd,int fd,char * path);				//显示页面的函数
-
-
-
-
